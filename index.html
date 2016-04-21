@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Common Sensor</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="commonSensor.css">
+</head>
+<body>
+	<div id="container">
+		<div class="col-lg-8">
+			<div class="main-room">
+				<div class="main-ppm"><span id="main-sensor">0</span>&mu;g/m&#179;</div>
+				<div class="main-img-container">
+					<img class="main-img" src="alertLvl0.png">
+					<img class="main-img hide-img" src="alertLvl1.png">
+					<img class="main-img hide-img" src="alertLvl2.png">
+				</div>
+			</div>
+			<div class="main-instruct">All good!</div>
+		</div>
+		<div class="col-lg-4">
+			<button id="change-sensor">Stop Sensor</button>
+			<button id="monitor-room">Monitor Room</button>
+			<div class="main-zone-actions" height="350px">
+				<img class="zone-img zone-lvl-0" src="zoneLvl0.jpg">
+				<img class="zone-img zone-lvl-1 hide-img" src="zoneLvl1.jpg">
+				<img class="zone-img zone-lvl-2 hide-img" src="zoneLvl2.png">
+			</div>
+			<div height="50%" style="margin-top: 10%">
+				<div class="zone-sensor zone2" >Zone 2</div>
+				<br>
+				<div class="motor-sensor" >Motor is<br><span id="motor-state">Off</span></div>
+			</div>
+		</div>
+		<div class="sensor2-data hidden-img">0</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="commonSensor.js"></script>
+</body>
+</html>
